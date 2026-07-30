@@ -1,0 +1,10 @@
+10:48:18 **** Incremental Build of configuration Debug for project F103_GasTest ****
+make -j4 all 
+arm-none-eabi-size  F103_GasTest.elf 
+   text	   data	    bss	    dec	    hex	filename
+  16040	     12	   1940	  17992	   4648	F103_GasTest.elf
+Finished building: default.size.stdout
+ 
+
+10:48:20 Build Finished. 0 errors, 0 warnings. (took 1s.381ms)
+

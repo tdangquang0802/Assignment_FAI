@@ -1,0 +1,20 @@
+/*
+ * bootloader.h
+ *
+ *  Created on: Jul 24, 2026
+ *      Author: Quang Trung
+ */
+
+#ifndef BOOTLOADER_H
+#define BOOTLOADER_H
+
+#include <stdint.h>
+
+void Bootloader_PreMain(void);
+void Bootloader_ButtonEXTI_Init(void);
+void Bootloader_ModeExec(uint8_t mode);
+
+extern volatile uint8_t g_bootloaderRequested;
+extern volatile uint8_t g_bootMode;
+
+#endif

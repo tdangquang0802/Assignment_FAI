@@ -1,0 +1,12 @@
+# ==== STM32CubeIDE / Eclipse build output ====
+123/
+blind_LED/
+CAN_F103_TX/
+Counting/
+Counting2/
+F103_GasTest/
+F103Handler/
+F407_Gateway/
+FREERTOS_project/
+readSensor/
+

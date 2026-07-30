@@ -1,0 +1,21 @@
+14:43:15 **** Build of configuration Debug for project Counting2 ****
+make -j4 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'Display_ShowDigit':
+../Core/Src/main.c:341:31: warning: unused variable 'state' [-Wunused-variable]
+  341 |                 GPIO_PinState state =
+      |                               ^~~~~
+arm-none-eabi-gcc -o "Counting2.elf" @"objects.list"   -mcpu=cortex-m4 -T"C:\Users\Quang Trung\STM32CubeIDE\workspace_1.19.0\Counting2\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="Counting2.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: Counting2.elf
+ 
+arm-none-eabi-size  Counting2.elf 
+arm-none-eabi-objdump -h -S Counting2.elf  > "Counting2.list"
+   text	   data	    bss	    dec	    hex	filename
+   7216	     24	   1584	   8824	   2278	Counting2.elf
+Finished building: default.size.stdout
+ 
+Finished building: Counting2.list
+ 
+
+14:43:32 Build Finished. 0 errors, 1 warnings. (took 16s.538ms)
+

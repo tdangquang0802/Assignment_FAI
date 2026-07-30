@@ -4,13 +4,13 @@ Release/
 RTE/
 build/
 
-# ==== Eclipse / STM32CubeIDE project metadata (may keep .project/.cproject if you want) ====
+
 .metadata/
 .settings/
 .launches/
 *.launch
 
-# ==== Compiler / linker output ====
+
 *.o
 *.d
 *.su
@@ -22,14 +22,12 @@ build/
 *.hex
 *.axf
 
-# ==== STM32CubeMX backup files ====
+
 *.ioc.bak
 *~
 
-# ==== OS junk ====
+
 .DS_Store
 Thumbs.db
 desktop.ini
 
-# ==== VS Code ====
-.vscode/

@@ -5,38 +5,3 @@
 !/CAN_Test/
 !/.gitignore
 !/README.md
-# ==== STM32CubeIDE / Eclipse build output ====
-Debug/
-Release/
-RTE/
-build/
-
-# ==== Eclipse / STM32CubeIDE project metadata (may keep .project/.cproject if you want) ====
-.metadata/
-.settings/
-.launches/
-*.launch
-
-# ==== Compiler / linker output ====
-*.o
-*.d
-*.su
-*.cyclo
-*.map
-*.list
-*.elf
-*.bin
-*.hex
-*.axf
-
-# ==== STM32CubeMX backup files ====
-*.ioc.bak
-*~
-
-# ==== OS junk ====
-.DS_Store
-Thumbs.db
-desktop.ini
-
-# ==== VS Code ====
-.vscode/
